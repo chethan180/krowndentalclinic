@@ -25,6 +25,25 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .map-container {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+          height: 0;
+          overflow: hidden;
+          max-width: 100%;
+          background: #eee;
+      }
+
+      .map-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+      }
+  </style>
   </head>
   <body>
     
@@ -57,7 +76,7 @@
             <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Experience Modern Dentistry in a Calm, Relaxed Setting</h1>
               <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our serene environment ensures a comfortable and stress-free dental experience.</p>              
-              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#" class="btn btn-primary px-4 py-3">Make an Appointment</a></p>
+              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="contact.html" class="btn btn-primary px-4 py-3" data-toggle="modal" data-target="#modalRequest"><span>Make an Appointment</span></a></p>
             </div>
           </div>
         </div>
@@ -70,17 +89,16 @@
             <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
               <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Achieve Your Perfect Smile with Modern Dentistry</h1>
               <p class="mb-4">Let our expert team craft the smile you've always dreamed of, in a comfortable and caring environment.</p>              
-              <p><a href="#" class="btn btn-primary px-4 py-3">Make an Appointment</a></p>
+              <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="contact.html" class="btn btn-primary px-4 py-3" data-toggle="modal" data-target="#modalRequest"><span>Make an Appointment</span></a></p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-  
-    <section class="ftco-section ftco-services">
+		<section class="ftco-section">
       <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
+      	<div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <h2 class="mb-2">Our Services Keep You Smiling</h2>
             <p>We offer a range of top-quality dental treatments to ensure your smile stays healthy and beautiful.</p>
@@ -90,91 +108,96 @@
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-tooth-1"></span>
+            		<span class="flaticon-tooth"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Teeth Whitening</h3>
-                <p>Brighten your smile with our safe and effective teeth whitening services.</p>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
           </div>
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-dental-care"></span>
+            		<span class="flaticon-dental-care"></span>
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Teeth Cleaning</h3>
-                <p>Maintain your oral health with our thorough and gentle teeth cleaning procedures.</p>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>    
           </div>
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-tooth-with-braces"></span>
+            		<span class="flaticon-tooth-with-braces"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Orthodontic Braces</h3>
-                <p>Get a straight, beautiful smile with our high-quality braces and orthodontic care.</p>
+                <h3 class="heading">Quality Brackets</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
           </div>
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block text-center">
               <div class="icon d-flex justify-content-center align-items-center">
-                <span class="flaticon-anesthesia"></span>
+            		<span class="flaticon-anesthesia"></span>
               </div>
               <div class="media-body p-2 mt-3">
-                <h3 class="heading">Modern Anesthesia</h3>
-                <p>Experience pain-free treatments with our advanced and safe anesthetic techniques.</p>
+                <h3 class="heading">Modern Anesthetic</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>      
+          </div>
+
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-dental-care"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Dental Calculus</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-bacteria"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Paradontosis</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>    
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-dentist"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Dental Implants</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-dental-care-1"></span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Tooth Braces</h3>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
               </div>
             </div>      
           </div>
         </div>
-      </div>      
-      <div class="container-wrap mt-5">
-        <div class="row d-flex no-gutters">
-          <div class="col-md-6 img" style="background-image: url(images/about-2.jpg);">
-          </div>
-          <div class="col-md-6 d-flex">
-            <div class="about-wrap">
-              <div class="heading-section heading-section-white mb-5 ftco-animate">
-                <h2 class="mb-2">Dentacare with a Personal Touch</h2>
-                <p>We combine expertise and compassion to provide exceptional dental care tailored to your needs.</p>
-              </div>
-              <div class="list-services d-flex ftco-animate">
-                <div class="icon d-flex justify-content-center align-items-center">
-                  <span class="icon-check2"></span>
-                </div>
-                <div class="text">
-                  <h3>Experienced Dentists</h3>
-                  <p>Our skilled team of dentists brings years of experience to ensure your best dental health.</p>
-                </div>
-              </div>
-              <div class="list-services d-flex ftco-animate">
-                <div class="icon d-flex justify-content-center align-items-center">
-                  <span class="icon-check2"></span>
-                </div>
-                <div class="text">
-                  <h3>State-of-the-Art Technology</h3>
-                  <p>We use the latest technology to deliver precise and effective treatments for every patient.</p>
-                </div>
-              </div>
-              <div class="list-services d-flex ftco-animate">
-                <div class="icon d-flex justify-content-center align-items-center">
-                  <span class="icon-check2"></span>
-                </div>
-                <div class="text">
-                  <h3>Comfortable Clinics</h3>
-                  <p>Our clinics are designed to offer a relaxing and stress-free environment during your visit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>      
+    </section>    
+  
 
     <section class="ftco-section">
       <div class="container">
@@ -240,7 +263,9 @@
           </div>
         </div>
       </div>
-    </section>    
+    </section>   
+    
+    
     <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row d-flex align-items-center">
@@ -255,19 +280,19 @@
               <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
-                    <strong class="number" data-number="14">0</strong>
+                    <strong class="number" data-number="25">0</strong>
                     <span>Years of Experience</span>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+              <!-- <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
                     <strong class="number" data-number="4500">0</strong>
                     <span>Qualified Dentists</span>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                 <div class="block-18">
                   <div class="text">
@@ -376,7 +401,7 @@
         </div>
       </div>
     </section>    
-		
+<!-- 		
 		<section class="ftco-quote">
     	<div class="container">
     		<div class="row">
@@ -434,11 +459,19 @@
     			</div>
     		</div>
     	</div>
-    </section>
+    </section> -->
 		
-    <div id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15222.815364741611!2d78.3442704!3d17.4738835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93f37e42a6f5%3A0x2abd71f17f995fa5!2sKrown%20dental%20clinic!5e0!3m2!1sen!2sin!4v1725559017762!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+   
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.703841531914!2d78.34169547516692!3d17.473883483428082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93f37e42a6f5%3A0x2abd71f17f995fa5!2sKrown%20dental%20clinic!5e0!3m2!1sen!2sin!4v1726282097732!5m2!1sen!2sin"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -448,20 +481,20 @@
               <h2 class="ftco-heading-2">Krown Dental Clinic</h2>
               <p>Your smile, our priority. Providing expert dental care in a comfortable and welcoming environment. Contact us for appointments and inquiries.</p>
             </div>
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+            <!-- <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
               <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
               <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
               <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-            </ul>
+            </ul> -->
           </div>
           <div class="col-md-2">
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Quick Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Features</a></li>
-                <li><a href="#" class="py-2 d-block">Projects</a></li>
-                <li><a href="#" class="py-2 d-block">Contact</a></li>
+                <li><a href="about.html" class="py-2 d-block">About</a></li>
+                <li><a href="services.html" class="py-2 d-block">Features</a></li>
+                <li><a href="doctors.html" class="py-2 d-block">Doctors</a></li>
+                <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -482,7 +515,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Krown Dental Clinic </a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -505,39 +538,33 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="#">
+          <form action="https://formspree.io/f/mwpejqwy" method="POST">
             <div class="form-group">
-              <!-- <label for="appointment_name" class="text-black">Full Name</label> -->
-              <input type="text" class="form-control" id="appointment_name" placeholder="Full Name">
+              <input type="text" name="name" class="form-control" id="appointment_name" placeholder="Full Name">
             </div>
             <div class="form-group">
-              <!-- <label for="appointment_email" class="text-black">Email</label> -->
-              <input type="text" class="form-control" id="appointment_email" placeholder="Email">
+              <input type="email" name="email" class="form-control" id="appointment_email" placeholder="Email">
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <!-- <label for="appointment_date" class="text-black">Date</label> -->
-                  <input type="text" class="form-control appointment_date" placeholder="Date">
+                  <input type="text" name="date" class="form-control appointment_date" placeholder="Date">
                 </div>    
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <!-- <label for="appointment_time" class="text-black">Time</label> -->
-                  <input type="text" class="form-control appointment_time" placeholder="Time">
+                  <input type="text" name="time" class="form-control appointment_time" placeholder="Time">
                 </div>
               </div>
             </div>
-            
-
             <div class="form-group">
-              <!-- <label for="appointment_message" class="text-black">Message</label> -->
-              <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
+              <textarea name="message" id="appointment_message" class="form-control" cols="30" rows="10" placeholder="Message"></textarea>
             </div>
             <div class="form-group">
               <input type="submit" value="Make an Appointment" class="btn btn-primary">
             </div>
           </form>
+          
         </div>
         
       </div>
@@ -559,7 +586,6 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
